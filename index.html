@@ -1,60 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- visibilitys site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&visibility=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/assets/CSS/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <title>Frontend Mentor | News homepage</title>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="veil" class="veil visibility-off"></div>
+        <header class="header container">
+            <img class="header__logo" src="/assets/images/logo.svg" alt="" />
+            <nav class="header__nav">
+                <div class="nav__burger" id="burger">
+                    <svg
+                        width="40"
+                        height="17"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g fill="#00001A" fill-rule="evenodd">
+                            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                            <path d="M0 0h40v3H0z" />
+                        </g>
+                    </svg>
+                </div>
+                <div id="burger-close" class="visibility-off nav__burger-close">
+                    <svg
+                        width="32"
+                        height="31"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g fill="#00001A" fill-rule="evenodd">
+                            <path
+                                d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"
+                            />
+                            <path
+                                d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <ul id="nav-list" class="nav__list visibility-off">
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Popular</li>
+                    <li>Trending</li>
+                    <li>Categories</li>
+                </ul>
+            </nav>
+        </header>
 
-  The Bright Future of Web 3.0?
+        <main class="main container">
+            <img
+                class="main__img"
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt=""
+            />
+            <article class="main__article">
+                <h1 class="main__article-title">
+                    The Bright Future of Web 3.0?
+                </h1>
+                <p class="main__article-text">
+                    We dive into the next evolution of the web that claims to
+                    put the power of the platforms back into the hands of the
+                    people. But is it really fulfilling its promise?
+                </p>
+            </article>
+            <a href=""><button class="main__button">Read more</button></a>
+        </main>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+        <aside class="aside container">
+            <h2 class="aside__title">New</h2>
+            <section class="aside__section">
+                <a href="" class="link">
+                    <h3 class="aside__section-title">
+                        Hydrogen VS Electric Cars
+                    </h3>
+                </a>
+                <p class="aside__section-text">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+            </section>
+            <hr class="aside__hr" />
+            <section class="aside__section">
+                <a href="" class="link">
+                    <h3 class="aside__section-title">
+                        The Downsides of AI Artistry
+                    </h3>
+                </a>
+                <p class="aside__section-text">
+                    What are the possible adverse effects of on-demand AI image
+                    generation?
+                </p>
+            </section>
+            <hr class="aside__hr" />
+            <section class="aside__section">
+                <a href="" class="link">
+                    <h3 class="aside__section-title">
+                        Is VC Funding Drying Up?
+                    </h3>
+                </a>
+                <p class="aside__section-text">
+                    Private funding by VC firms is down 50% YOY. We take a look
+                    at what that means.
+                </p>
+            </section>
+        </aside>
 
-  Read more
+        <footer class="footer container">
+            <section class="footer__section">
+                <img
+                    class="footer__section-img"
+                    src="/assets/images/image-retro-pcs.jpg"
+                    alt=""
+                />
+                <div class="footer__section-text">
+                    <h3 class="section__nr">01</h3>
+                    <a href="" class="link">
+                        <h4 class="section__title">Reviving Retro PCs</h4>
+                    </a>
+                    <p class="section__text">
+                        What happens when old PCs are given modern upgrades?
+                    </p>
+                </div>
+            </section>
 
-  New 
+            <section class="footer__section">
+                <img
+                    class="footer__section-img"
+                    src="/assets/images/image-top-laptops.jpg"
+                    alt=""
+                />
+                <div class="footer__section-text">
+                    <h3 class="section__nr">02</h3>
+                    <a href="" class="link">
+                        <h4 class="section__title">Top 10 Laptops of 2022</h4>
+                    </a>
+                    <p class="section__text">
+                        Our best picks for various needs and budgets.
+                    </p>
+                </div>
+            </section>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+            <section class="footer__section">
+                <img
+                    class="footer__section-img"
+                    src="/assets/images/image-gaming-growth.jpg"
+                    alt=""
+                />
+                <div class="footer__section-text">
+                    <h3 class="section__nr">03</h3>
+                    <a href="" class="link">
+                        <h4 class="section__title">The Growth of Gaming</h4>
+                    </a>
+                    <p class="section__text">
+                        How the pandemic has sparked fresh opportunities.
+                    </p>
+                </div>
+            </section>
+        </footer>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Paweł</a>.
+        </div>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        <script>
+            const burger = document.querySelector("#burger");
+            const nav = document.querySelector("#nav-list");
+            const burgerClose = document.querySelector("#burger-close");
+            const veil = document.querySelector("#veil");
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("visibility-off");
+                burgerClose.classList.toggle("visibility-off");
+                veil.classList.toggle("visibility-off");
+            });
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            burgerClose.addEventListener("click", () => {
+                nav.classList.toggle("visibility-off");
+                burgerClose.classList.toggle("visibility-off");
+                veil.classList.toggle("visibility-off");
+            });
+        </script>
+    </body>
 </html>

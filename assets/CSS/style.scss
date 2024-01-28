@@ -1,0 +1,244 @@
+///////* css map */////////////////////
+////* VARIABLES , FONTS, CSS RESET*////
+////* MOBILE code  *///////////////////
+////* DESKTOP code *///////////////////
+////* UTILITIES *//////////////////////
+
+// VARIABLES , FONTS, CSS RESET
+
+// Primary colors
+$color-soft-orange: hsl(35, 77%, 62%);
+$color-soft-red: hsl(5, 85%, 63%);
+
+// Secondary colors
+$color-off-white: hsl(36, 100%, 99%);
+$color-gray-blue: hsl(233, 8%, 79%);
+$color-dark-gray-blue: hsl(236, 13%, 42%);
+$color-very-dark-gray-blue: hsl(240, 100%, 5%);
+
+// FONTS
+
+$font-inter: "Inter", sans-serif;
+
+// CSS RESET
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+// MOBILE code
+
+body {
+    width: 100%;
+    margin: 0;
+    min-height: 100svh;
+    font-size: 15px;
+    font-family: $font-inter;
+    font-weight: 400;
+    display: grid;
+    grid-template: auto / 375px;
+    justify-content: center;
+}
+
+.veil {
+    position: fixed;
+    height: 100svh;
+    background: black;
+    width: 100%;
+    opacity: 0.5;
+}
+.container {
+    max-width: 90%;
+    margin: 1rem auto;
+
+    .container:first-of-type {
+        background: red;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 90%;
+    margin-top: 2rem;
+
+    &__logo {
+        width: 15%;
+    }
+
+    .nav__burger,
+    .nav__list > *:hover,
+    .nav__burger-close svg:hover path {
+        cursor: pointer;
+    }
+
+    .nav__burger-close {
+        position: absolute;
+        z-index: 1;
+        top: 3em;
+    }
+
+    .nav__list {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: $color-off-white;
+        height: 100svh;
+        width: 65%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2em;
+        padding: 10rem 0 0 2em;
+        font-size: medium;
+        font-weight: 500;
+    }
+    .nav__burger svg:hover path,
+    .nav__list > *:hover,
+    .nav__burger-close svg:hover path {
+        color: $color-soft-orange;
+        fill: $color-soft-orange;
+    }
+}
+
+.main {
+    &__img,
+    &__article-title,
+    &__article-text {
+        margin-bottom: 1.5rem;
+    }
+
+    &__article-title {
+        font-size: xxx-large;
+        font-weight: 800;
+    }
+
+    &__article-text {
+        color: $color-dark-gray-blue;
+
+        line-height: 1.75;
+        font-weight: 500;
+    }
+
+    &__button {
+        color: $color-off-white;
+        border: none;
+        padding: 1em 3em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        background: $color-soft-red;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+    &__button:hover {
+        background: $color-very-dark-gray-blue;
+    }
+}
+
+.aside {
+    background: $color-very-dark-gray-blue;
+    color: $color-gray-blue;
+    font-weight: 500;
+    line-height: 2;
+    padding: 1em 1em 2em 1em;
+    margin-bottom: 3rem;
+
+    &__title {
+        color: $color-soft-orange;
+        font-size: xx-large;
+    }
+
+    &__section {
+        padding: 1em 0;
+    }
+    &__section-title {
+        color: $color-off-white;
+    }
+    &__section-title:hover {
+        color: $color-soft-orange;
+    }
+    &__section-text,
+    &__hr {
+        color: $color-dark-gray-blue;
+    }
+}
+
+.footer {
+    &__section {
+        display: flex;
+        gap: 2em;
+        margin-bottom: 2rem;
+    }
+    &__section-img {
+        width: 30%;
+    }
+    &__section-text {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .section__nr {
+        font-size: xx-large;
+        color: $color-gray-blue;
+    }
+
+    .section__title {
+        font-size: large;
+        font-weight: 800;
+        color: $color-very-dark-gray-blue;
+    }
+
+    .section__title:hover {
+        color: $color-soft-red;
+    }
+    .section__text {
+        font-weight: 600;
+        color: $color-dark-gray-blue;
+    }
+}
+
+/* Atribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    & a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+// UTILITIES
+.visibility-off {
+    visibility: hidden;
+}
+.link {
+    text-decoration: none;
+}

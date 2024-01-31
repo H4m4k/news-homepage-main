@@ -26,6 +26,7 @@
             .attribution {
                 font-size: 11px;
                 text-align: center;
+                margin-bottom: 2rem;
             }
             .attribution a {
                 color: hsl(228, 45%, 44%);
@@ -76,11 +77,17 @@
         </header>
 
         <main class="main container">
-            <img
-                class="main__img"
-                src="./assets/images/image-web-3-mobile.jpg"
-                alt=""
-            />
+            <div class="main__img">
+                <img
+                    src="./assets/images/image-web-3-mobile.jpg"
+                    alt=""
+                    srcset="
+                        ./assets/images/image-web-3-mobile.jpg   375w,
+                        ./assets/images/image-web-3-desktop.jpg 1440w
+                    "
+                />
+            </div>
+
             <article class="main__article">
                 <h1 class="main__article-title">
                     The Bright Future of Web 3.0?
@@ -90,8 +97,8 @@
                     put the power of the platforms back into the hands of the
                     people. But is it really fulfilling its promise?
                 </p>
+                <a href=""><button class="main__button">Read more</button></a>
             </article>
-            <a href=""><button class="main__button">Read more</button></a>
         </main>
 
         <aside class="aside container">

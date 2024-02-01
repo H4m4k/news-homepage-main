@@ -95,6 +95,9 @@ body {
   fill: hsl(35, 77%, 62%);
 }
 
+.main {
+  margin-bottom: 2em;
+}
 .main__img, .main__article-title, .main__article-text {
   margin-bottom: 1.5rem;
 }
@@ -115,8 +118,8 @@ body {
   letter-spacing: 5px;
   background: hsl(5, 85%, 63%);
   font-weight: 600;
-  margin-bottom: 2rem;
   cursor: pointer;
+  text-decoration: none;
 }
 .main__button:hover {
   background: hsl(240, 100%, 5%);
@@ -204,9 +207,9 @@ body {
     height: auto;
     flex-direction: row;
     padding: 0;
-    gap: 4em;
+    gap: 3em;
     color: hsl(236, 13%, 42%);
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .main {
     grid-area: 2/2/3/4;
@@ -229,7 +232,7 @@ body {
     margin-bottom: 3.5rem;
   }
   .main__button {
-    margin-bottom: 0;
+    justify-self: baseline;
   }
   .aside {
     display: flex;

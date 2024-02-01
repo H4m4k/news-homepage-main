@@ -127,6 +127,7 @@ body {
 }
 
 .main {
+    margin-bottom: 2em;
     &__img,
     &__article-title,
     &__article-text {
@@ -153,8 +154,8 @@ body {
         letter-spacing: 5px;
         background: $color-soft-red;
         font-weight: 600;
-        margin-bottom: 2rem;
         cursor: pointer;
+        text-decoration: none;
     }
     &__button:hover {
         background: $color-very-dark-gray-blue;
@@ -256,9 +257,9 @@ body {
             height: auto;
             flex-direction: row;
             padding: 0;
-            gap: 4em;
+            gap: 3em;
             color: $color-dark-gray-blue;
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
 
@@ -284,7 +285,7 @@ body {
             margin-bottom: 3.5rem;
         }
         &__button {
-            margin-bottom: 0;
+            justify-self: baseline;
         }
     }
 

@@ -231,7 +231,7 @@ body {
 @media screen and (min-width: 1000px) {
     body {
         font-size: 18px;
-        grid-template: 0.2fr 0.5fr 0.1fr 0.1fr/1fr repeat(3, 480px) 1fr;
+        grid-template: 5em 0.5fr 3em 0.1fr/1fr repeat(3, 480px) 1fr;
     }
 
     .container {
